@@ -25,6 +25,19 @@ def diamond_pattern(n):
             print("* ", end="")
         print()
 
+# *          *
+# **        **
+# ***      ***
+# ****    ****
+# *****  *****
+# ************
+# ************
+# *****  *****
+# ****    ****
+# ***      ***
+# **        **
+# *          *
+
 def butterfly_pattern(n):
     # Upper half of the butterfly
     for i in range(1, n + 1):
