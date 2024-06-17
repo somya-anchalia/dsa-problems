@@ -1,6 +1,3 @@
-
-
-
 from typing import List
 
 def getLongestSubarray(a: [int], k: int) -> int:
