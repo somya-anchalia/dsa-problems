@@ -6,6 +6,12 @@ def rotate(matrix: List[List[int]]) -> None:
     for i in range(n):
         for j in range(i):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+    print("Transposed Matrix")
+    for i in range(len(arr)):
+        for j in range(len(arr[0])):
+            print(arr[i][j], end=" ")
+        print()
+
     # reversing each row of the matrix
     for i in range(n):
         matrix[i].reverse()
