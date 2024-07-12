@@ -5,9 +5,52 @@ class Node:
         self.data = data
         self.next = next_node
 
+
+# Function to reverse the
+# linked list using a stack
+def bruteforce_reverse_linked_list(head):
+    # Create a temporary pointer
+    # to traverse the linked list
+    temp = head  
+    
+    # Create a stack to temporarily
+    # store the data values
+    stack = []   
+
+    # Step 1: Push the values of the
+    # linked list onto the stack
+    while temp is not None:
+        # Push the current node's
+        # data onto the stack
+        stack.append(temp.data) 
+        # Move to the next node
+        # in the linked list
+        temp = temp.next        
+
+    # Reset the temporary pointer
+    # to the head of the linked list
+    temp = head  
+
+    # Step 2: Pop values from the stack
+    # and update the linked list
+    while temp is not None:
+        
+        # Set the current node's data to
+        # the value at the top of the stack
+        temp.data = stack.pop()  
+        
+         # Move to the next node in
+         # the linked list
+        temp = temp.next        
+
+    # Return the new head of
+    # the reversed linked list
+    return head 
+
+
 # Function to reverse a singly
 # linked list using a recursion
-def reverse_linked_list(head):
+def optimal_reverse_linked_list(head):
     # Base case:
     # If the linked list is empty or has only one node,
     # return the head as it is already reversed.
