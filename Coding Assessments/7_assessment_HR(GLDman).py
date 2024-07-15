@@ -40,5 +40,5 @@ def betterCompression(S):
     return ''.join(result)
 
 # Example Usage
-S = 'a3c9b2c1'
+S = 'c3c9b2a1d4c5b78'
 print(betterCompression(S))  # Output: 'a3b2c10'
