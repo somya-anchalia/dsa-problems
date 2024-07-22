@@ -23,8 +23,6 @@ def findMissingRepeatingNumbers(a: [int]) -> [int]:
     return [repeating, missing]
 
 if __name__ == '__main__':
-    a = [3, 1, 2, 5, 4, 6, 7, 5]
+    a = [3, 1, 2, 5, 6, 7, 3]
     ans = findMissingRepeatingNumbers(a)
     print("The repeating and missing numbers are: {", ans[0], ", ", ans[1], "}\n")
-
-
