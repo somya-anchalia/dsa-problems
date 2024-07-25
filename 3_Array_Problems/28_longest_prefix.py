@@ -12,4 +12,6 @@ def longestCommonPrefix(strs: List[str]) -> str:
                 return ""
     return prefix
 
-print(longestCommonPrefix(["flower","flow","flight"]))
+longest_pref = longestCommonPrefix(["flower","flow","flight"])
+
+print(longest_pref)
