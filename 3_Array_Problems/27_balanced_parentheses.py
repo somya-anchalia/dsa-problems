@@ -6,6 +6,7 @@ def isValid(s: str) -> bool:
         else:
             if len(st) == 0:
                 return False
+            print(st)
             ch = st[-1]
             st.pop()
             if (it == ')' and ch == '(') or (it == ']' and ch == '[') or (it == '}' and ch == '{'):
@@ -13,8 +14,6 @@ def isValid(s: str) -> bool:
             else:
                 return False
     return len(st) == 0
-
-
 
 
 if __name__ == '__main__':
