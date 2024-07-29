@@ -3,7 +3,6 @@ def searchInsert(arr: [int], x: int) -> int:
     low = 0
     high = n - 1
     ans = n
-
     while low <= high:
         mid = (low + high) // 2
         # maybe an answer
@@ -13,7 +12,7 @@ def searchInsert(arr: [int], x: int) -> int:
             high = mid - 1
         else:
             low = mid + 1  # look on the right
-
+        print(mid)
     return ans
 
 if __name__ == "__main__":
