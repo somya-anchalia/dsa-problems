@@ -8,6 +8,7 @@ class NumArray:
             self.sum.append(sum_till)
 
     def sumRange(self, i: int, j: int) -> int:
+        print(self.sum)
         if i > 0 and j > 0:
             return self.sum[j] - self.sum[i - 1]
         else:
@@ -17,7 +18,7 @@ class NumArray:
 # Your NumArray object will be instantiated and called as such:
 nums= [-2,0,3,-5,2,-1]
 obj = NumArray(nums)
-left = 1
-right = 3
+left = 2
+right = 5
 param_1 = obj.sumRange(left,right)
 print(param_1)
