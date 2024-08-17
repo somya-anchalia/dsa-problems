@@ -14,4 +14,6 @@ def removeDuplicates_II(nums):
 
     return k       # Return k after placing the final result in the first k slots of nums
 
-removeDuplicates_II()
+nums = [0,0,1,1,1,2,2,3,3,4]
+length = removeDuplicates_II(nums)
+print(length)
